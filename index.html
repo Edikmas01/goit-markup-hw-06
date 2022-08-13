@@ -472,13 +472,62 @@
         </div>
       </div>
     </footer>
-    <div class="beckdrop is-hidden" data-modal>
+
+    is-hidden -- ВСТАІИТ ПЕСЛЕ ВЕК ДРОП
+
+    <div class="beckdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="beckdrop-icon" width="11" height="11">
             <use href="./photo/symbol-defs.svg#icon-exit"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <div class="modal-div">
+            <label for="user-name" class="form-label">Ім'я</label>
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              id="user-name"
+            />
+          </div>
+          <div class="modal-div">
+            <label for="user-tel" class="form-label">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              id="user-tel"
+            />
+          </div>
+          <div class="modal-div">
+            <label for="user-email" class="form-label">Пошта</label>
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              id="user-email"
+            />
+          </div>
+          <div class="modal-div">
+            <label for="user-text" class="form-label">Коментар</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введіть текст"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <div class="chec">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree" id="agree" class="chec-text"
+              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+          </div>
+          <button type="submit" class="form-btn">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
