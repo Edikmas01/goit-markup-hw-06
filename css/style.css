@@ -156,7 +156,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--pre-title-color);
-  transition: color 300ms linear;
+  transition: color 250ms linear;
 }
 
 .header-connect {
@@ -170,7 +170,7 @@ body {
 .envelope-icon-header {
   margin-right: 10px;
   fill: var(--pre-title-color);
-  transition: fill 300ms linear;
+  transition: fill 250ms linear;
 }
 
 .header-email:hover {
@@ -190,7 +190,7 @@ body {
 .phone-icon-header {
   margin-right: 10px;
   fill: var(--pre-title-color);
-  transition: fill 300ms linear;
+  transition: fill 250ms linear;
 }
 
 .header-tel:hover {
@@ -250,6 +250,7 @@ body {
   margin-top: 40px;
   background: #2196f3;
   border: 0;
+  border-radius: 4px;
 }
 
 /*------ adout-------*/
@@ -446,12 +447,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 300ms linear;
+  transition: border-color 250ms linear;
 }
 
 .client-icon {
   fill: #afb1b8;
-  transition: fill 300ms linear;
+  transition: fill 250ms linear;
 }
 
 .client-icon:hover {
@@ -513,7 +514,7 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 9px;
-  transition: color 300ms linear;
+  transition: color 250ms linear;
 }
 
 .footer-address:hover,
@@ -579,12 +580,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 300ms linear;
+  transition: background-color 250ms linear;
 }
 
 .footer-soc-icon {
   fill: #ffffff;
-  transition: fill 300ms linear;
+  transition: fill 250ms linear;
 }
 
 .footer-soc-link:hover {
@@ -644,6 +645,7 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
   border: none;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   padding-left: 28px;
@@ -675,7 +677,7 @@ body {
   color: var(--title-color);
   padding: 6px 22px;
   border: #f5f4fa;
-  transition: background-color 300ms linear, color 300ms linear;
+  transition: background-color 250ms linear, color 300ms linear;
 }
 
 .menu-btn:hover,
@@ -763,7 +765,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: opacity 250ms linear, visibility 300ms linear;
 }
 
 .beckdrop .is-hidden .modal {
@@ -789,8 +791,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
+
 .modal-btn {
   position: absolute;
   right: 8px;
@@ -799,7 +802,22 @@ body {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: transparent;
+  transition: border-color 250ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beckdrop-icon {
+  transition: fill 250ms;
+}
+
+.modal-btn:hover {
+  border-color: var(--accent-color);
+}
+.modal-btn:hover .beckdrop-icon {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
